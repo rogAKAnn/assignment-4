@@ -24,40 +24,4 @@ if SUCCESS:
 
     background = pygame.mixer.Sound(os.path.join("res", "sounds", "background.ogg"))
 
-class Music:
-    def __init__(self):
-        self.playing = False
-        
-    def play(self, load):
-        if SUCCESS and load["sounds"]:
-            background.play(-1)
-            self.playing = True
-    
-    def stop(self):
-        if SUCCESS:
-            background.stop()
-        self.playing = False
-        
-    def is_playing(self):
-        return self.playing
 
-def play_click(load):
-    if SUCCESS and load["sounds"]:
-        click.play()
-        time.sleep(0.1)
-    
-def play_start(load):
-    if SUCCESS and load["sounds"]:
-        start.play()
-    
-def play_move(load):
-    if SUCCESS and load["sounds"]:
-        move.play()
-        time.sleep(0.1)
-    
-def play_drag(load):
-    if SUCCESS and load["sounds"]:
-        drag.play()
-
-if SUCCESS:
-    pygame.mixer.quit()

@@ -43,9 +43,6 @@ def main(win, mode, timer, load, movestr=""):
                     if load["flip"] and side:
                         x, y = 9 - x, 9 - y
 
-                    if isOccupied(side, board, [x, y]):
-                        sound.play_click(load)
-
                     prevsel = sel
                     sel = [x, y]
 

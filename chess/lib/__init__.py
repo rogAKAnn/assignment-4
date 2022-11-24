@@ -102,7 +102,6 @@ def showAvailMoves(win, side, board, pos, flags, flip):
 # This function makes a gentle animation of a piece that is getting moved.
 # This function needs to be called BEFORE the actual move takes place
 def animate(win, side, board, fro, to, load, player=None):
-    sound.play_drag(load)
     if player is None:
         FLIP = side and load["flip"]
     else:
@@ -129,7 +128,6 @@ def animate(win, side, board, fro, to, load, player=None):
         pygame.draw.rect(win, col, (x1, y1, 50, 50))
         win.blit(piece, (x1 + (i * stepx), y1 + (i * stepy)))
         pygame.display.update()
-    sound.play_move(load)
 
 # This is a compilation of all gui functions. This handles the display of the
 # screen when chess gameplay takes place. This tool needs to be called

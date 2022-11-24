@@ -129,41 +129,14 @@ class CHESS:
     OK = small.render("Ok", True, WHITE)
     COL = small.render(":", True, BLACK)
 
-class LOADGAME:
-    HEAD = large.render("Load Games", True, WHITE)
-    LIST = medium.render("List of Games", True, WHITE)
-    EMPTY = small.render("There are no saved games yet.....", True, WHITE)
-    GAME = small.render("Game", True, WHITE)
-    TYPHEAD = vsmall.render("Game Type:", True, WHITE)
-    TYP = {
-        "single": vsmall.render("SinglePlayer", True, WHITE),
-        "mysingle": vsmall.render("SinglePlayer", True, WHITE),
-        "multi": vsmall.render("MultiPlayer", True, WHITE),
-    }
-    DATE = vsmall.render("Date-", True, WHITE)
-    TIME = vsmall.render("Time-", True, WHITE)
 
-    DEL = pygame.image.load(os.path.join("res", "img", "delete.jpg"))
-    LOAD = small.render("LOAD", True, WHITE)
-
-    MESSAGE = (
-        small.render("Are you sure that you", True, WHITE),
-        small.render("want to delete game?", True, WHITE),
-    )
-    YES = small.render("YES", True, WHITE)
-    NO = small.render("NO", True, WHITE)
-
-    LEFT = medium.render("<", True, WHITE)
-    RIGHT = medium.render(">", True, WHITE)
-    PAGE = [medium.render("Page " + str(i), True, WHITE) for i in range(1, 5)]
 
 class MAIN:
-    HEADING = head.render("PyChess", True, WHITE)
-    VERSION = vsmall.render("Version 3.2", True, WHITE)
+    HEADING = medium.render("Chess Online", True, WHITE)
     ICON = pygame.image.load(os.path.join("res", "img", "icon.gif"))
     BG = [BGSPRITE.subsurface((i * 500, 0, 500, 500)) for i in range(4)]
 
-    SINGLE = medium.render("SinglePlayer", True, WHITE)
+    SINGLE = medium.render("Play vs AI", True, WHITE)
     MULTI = medium.render("MultiPlayer", True, WHITE)
     ONLINE = medium.render("Online", True, WHITE)
     LOAD = medium.render("Load Game", True, WHITE)
@@ -171,6 +144,8 @@ class MAIN:
     ABOUT = medium.render("About", True, WHITE)
     PREF = medium.render("Preferences", True, WHITE)
     STOCK = small.render("Configure Stockfish", True, WHITE)
+    QUIT = medium.render("Quit", True, WHITE)
+
 
     SINGLE_H = medium.render("SinglePlayer", True, GREY)
     MULTI_H = medium.render("MultiPlayer", True, GREY)
@@ -192,6 +167,7 @@ class PREF:
     UNDO = medium.render("Allow undo", True, WHITE)
 
     COLON = medium.render(":", True, WHITE)
+
 
     TRUE = medium.render("True", True, WHITE)
     FALSE = medium.render("False", True, WHITE)

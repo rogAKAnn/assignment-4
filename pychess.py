@@ -153,6 +153,9 @@ while run:
                 elif ret != 1:
                     run = chess.online(win, ret[0], prefs, ret[1])
 
+            elif (onln[0] < x < sum(onln[::2]) and onln[1] < y < sum(onln[1::2])):
+                run = False
+
 
 
 

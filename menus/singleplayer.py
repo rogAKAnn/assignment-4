@@ -55,24 +55,24 @@ def showScreen(win, sel, sel2, lvl):
     rounded_rect(win, (255, 255, 255), (170, 210, 140, 30), 7, 3)
     win.blit(SINGLE.START, (170, 210))
 
-    win.blit(SINGLE.OR, (220, 250))
+    # win.blit(SINGLE.OR, (220, 250))
 
-    rounded_rect(win, (255, 255, 255), (10, 295, 480, 200), 12, 4)
-    for cnt, i in enumerate(SINGLE.PARA2):
-        y = 300 + cnt * 17
-        win.blit(i, (20, y))
-    win.blit(SINGLE.LEVEL, (30, 380))
-    for i in range(9):
-        pygame.draw.rect(win, (255, 255, 255), (110 + i*35, 380, 25, 30), 3)
-        putLargeNum(win, i+1, (113 + i*35, 380))
-    pygame.draw.rect(win, (50, 100, 150), (75 + lvl*35, 380, 25, 30), 3)
+    # rounded_rect(win, (255, 255, 255), (10, 295, 480, 200), 12, 4)
+    # for cnt, i in enumerate(SINGLE.PARA2):
+    #     y = 300 + cnt * 17
+    #     win.blit(i, (20, y))
+    # win.blit(SINGLE.LEVEL, (30, 380))
+    # for i in range(9):
+    #     pygame.draw.rect(win, (255, 255, 255), (110 + i*35, 380, 25, 30), 3)
+    #     putLargeNum(win, i+1, (113 + i*35, 380))
+    # pygame.draw.rect(win, (50, 100, 150), (75 + lvl*35, 380, 25, 30), 3)
 
-    win.blit(SINGLE.CHOOSE, (40, 440))
-    win.blit(SINGLE.SELECT, (150, 430))
-    pygame.draw.rect(win, (50, 100, 150), (150 + sel2*50, 430, 50, 50), 3)
+    # win.blit(SINGLE.CHOOSE, (40, 440))
+    # win.blit(SINGLE.SELECT, (150, 430))
+    # pygame.draw.rect(win, (50, 100, 150), (150 + sel2*50, 430, 50, 50), 3)
 
-    rounded_rect(win, (255, 255, 255), (320, 440, 140, 30), 7, 3)
-    win.blit(SINGLE.START, (320, 440))
+    # rounded_rect(win, (255, 255, 255), (320, 440, 140, 30), 7, 3)
+    # win.blit(SINGLE.START, (320, 440))
 
 # This is the main function, called from main menu
 def main(win):

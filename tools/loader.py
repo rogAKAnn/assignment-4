@@ -277,7 +277,7 @@ class ONLINEMENU:
     CONNECT = small.render("Connect", True, WHITE)
 
 class SINGLE:
-    HEAD = large.render("Singleplayer", True, WHITE)
+    HEAD = large.render("  Play vs AI", True, WHITE)
     SELECT = pygame.image.load(os.path.join("res", "img", "select.jpg"))
     CHOOSE = small.render("Choose:", True, WHITE)
     START = small.render("Start Game", True, WHITE)
